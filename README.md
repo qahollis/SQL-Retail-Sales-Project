@@ -197,7 +197,7 @@ AND ms.avg_sale = best_months.max_sale
 ORDER BY ms.sale_year, ms.sale_month;
 ```
 
-8. **Write a SQL query to find the top 5 customers based on the highest total sales **:
+8. **Write a SQL query to find the top 5 customers based on the highest total sales:**
 ```sql
 SELECT SUM(total_sale) AS sumsale, customer_id
 FROM retail_sales
@@ -206,7 +206,7 @@ ORDER BY sumsale DESC
 LIMIT 5;
 ```
 
-9. **Write a SQL query to find the number of unique customers who purchased items from each category.**:
+9. **Write a SQL query to find the number of unique customers who purchased items from each category:**
 ```sql
 SELECT category, COUNT(DISTINCT customer_id) AS unique_customers
 FROM retail_sales
